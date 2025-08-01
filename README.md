@@ -42,7 +42,19 @@ Install related packages
 
 ## RUN (Get data)
 
-`python3 rpi-dht20-sensor.py`
+Make sure activate venv before run
+
+```
+cd rpi-dht20-sensor
+python3 rpi-dht20-sensor.py
+```
+
+If you want watch, just use `watch`
+
+```
+cd rpi-dht20-sensor
+watch python3 rpi-dht20-sensor.py
+```
 
 
 ## Reference
