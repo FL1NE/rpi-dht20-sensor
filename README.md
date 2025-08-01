@@ -32,29 +32,26 @@ Raspberry Pi : DHT10
 ### Setup Python venv / activate venv / install related packages
 
 Setup venv
-`python -m venv rpi-dht20-sensor`
+```
+cd rpi-dht20-sensor
+python -m venv .venv
+```
 
 Activate venv
-`source rpi-dht20-sensor/bin/activate`
+`source .venv/bin/activate`
 
-Install related packages
-`pip3 install adafruit-circuitpython-ahtx0 board rpi.gpio`
+Install requirements.txt
+`pip3 install -r requirements.txt`
 
 ## RUN (Get data)
 
 Make sure activate venv before run
 
-```
-cd rpi-dht20-sensor
-python3 rpi-dht20-sensor.py
-```
+`python3 rpi-dht20-sensor.py`
 
 If you want watch, just use `watch`
 
-```
-cd rpi-dht20-sensor
-watch python3 rpi-dht20-sensor.py
-```
+`watch python3 rpi-dht20-sensor.py`
 
 
 ## Reference
